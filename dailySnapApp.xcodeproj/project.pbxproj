@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E7A79E8185CE58B00FABC39 /* id.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A79E5185CE58B00FABC39 /* id.png */; };
+		8E7A79E9185CE58B00FABC39 /* addSnap.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A79E6185CE58B00FABC39 /* addSnap.png */; };
+		8E7A79EA185CE58B00FABC39 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A79E7185CE58B00FABC39 /* password.png */; };
+		8E7A79ED185CE82B00FABC39 /* ViewLogin.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E7A79EC185CE82B00FABC39 /* ViewLogin.m */; };
 		8EB745E7185CA890008A8935 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB745E6185CA890008A8935 /* Foundation.framework */; };
 		8EB745E9185CA890008A8935 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB745E8185CA890008A8935 /* CoreGraphics.framework */; };
 		8EB745EB185CA890008A8935 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EB745EA185CA890008A8935 /* UIKit.framework */; };
@@ -25,6 +29,12 @@
 		8EB74623185CA9F8008A8935 /* CollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB74622185CA9F8008A8935 /* CollectionViewController.m */; };
 		8EB74626185CAC9A008A8935 /* 12.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB74625185CAC9A008A8935 /* 12.png */; };
 		8EB74628185CACA7008A8935 /* 23.png in Resources */ = {isa = PBXBuildFile; fileRef = 8EB74627185CACA7008A8935 /* 23.png */; };
+		8EEE8C7B185D756B0087F48C /* ModelServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE8C7A185D756B0087F48C /* ModelServer.m */; };
+		8EEE8C8B185D77E70087F48C /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE8C7E185D77E70087F48C /* SDImageCache.m */; };
+		8EEE8C8C185D77E70087F48C /* SDWebImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE8C82185D77E70087F48C /* SDWebImageDecoder.m */; };
+		8EEE8C8D185D77E70087F48C /* SDWebImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE8C84185D77E70087F48C /* SDWebImageDownloader.m */; };
+		8EEE8C8E185D77E70087F48C /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE8C87185D77E70087F48C /* SDWebImageManager.m */; };
+		8EEE8C8F185D77E70087F48C /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEE8C8A185D77E70087F48C /* UIImageView+WebCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +48,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E7A79E5185CE58B00FABC39 /* id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id.png; sourceTree = "<group>"; };
+		8E7A79E6185CE58B00FABC39 /* addSnap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addSnap.png; sourceTree = "<group>"; };
+		8E7A79E7185CE58B00FABC39 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
+		8E7A79EB185CE82B00FABC39 /* ViewLogin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewLogin.h; sourceTree = "<group>"; };
+		8E7A79EC185CE82B00FABC39 /* ViewLogin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewLogin.m; sourceTree = "<group>"; };
 		8EB745E3185CA890008A8935 /* dailySnapApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dailySnapApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8EB745E6185CA890008A8935 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		8EB745E8185CA890008A8935 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,12 +72,28 @@
 		8EB7460D185CA890008A8935 /* dailySnapAppTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "dailySnapAppTests-Info.plist"; sourceTree = "<group>"; };
 		8EB7460F185CA890008A8935 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8EB74611185CA890008A8935 /* dailySnapAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dailySnapAppTests.m; sourceTree = "<group>"; };
-		8EB7461E185CA9D3008A8935 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionCell.h; sourceTree = "<group>"; };
-		8EB7461F185CA9D3008A8935 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionCell.m; sourceTree = "<group>"; };
-		8EB74621185CA9F8008A8935 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionViewController.h; path = ../CollectionViewController.h; sourceTree = "<group>"; };
-		8EB74622185CA9F8008A8935 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionViewController.m; path = ../CollectionViewController.m; sourceTree = "<group>"; };
+		8EB7461E185CA9D3008A8935 /* CollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CollectionCell.h; path = dailySnapApp/CollectionCell.h; sourceTree = "<group>"; };
+		8EB7461F185CA9D3008A8935 /* CollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CollectionCell.m; path = dailySnapApp/CollectionCell.m; sourceTree = "<group>"; };
+		8EB74621185CA9F8008A8935 /* CollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CollectionViewController.h; sourceTree = "<group>"; };
+		8EB74622185CA9F8008A8935 /* CollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CollectionViewController.m; sourceTree = "<group>"; };
 		8EB74625185CAC9A008A8935 /* 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 12.png; sourceTree = "<group>"; };
 		8EB74627185CACA7008A8935 /* 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 23.png; sourceTree = "<group>"; };
+		8EEE8C79185D756B0087F48C /* ModelServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelServer.h; sourceTree = "<group>"; };
+		8EEE8C7A185D756B0087F48C /* ModelServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelServer.m; sourceTree = "<group>"; };
+		8EEE8C7D185D77E70087F48C /* SDImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCache.h; sourceTree = "<group>"; };
+		8EEE8C7E185D77E70087F48C /* SDImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDImageCache.m; sourceTree = "<group>"; };
+		8EEE8C7F185D77E70087F48C /* SDImageCacheDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDImageCacheDelegate.h; sourceTree = "<group>"; };
+		8EEE8C80185D77E70087F48C /* SDWebImageCompat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageCompat.h; sourceTree = "<group>"; };
+		8EEE8C81185D77E70087F48C /* SDWebImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDecoder.h; sourceTree = "<group>"; };
+		8EEE8C82185D77E70087F48C /* SDWebImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDecoder.m; sourceTree = "<group>"; };
+		8EEE8C83185D77E70087F48C /* SDWebImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloader.h; sourceTree = "<group>"; };
+		8EEE8C84185D77E70087F48C /* SDWebImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageDownloader.m; sourceTree = "<group>"; };
+		8EEE8C85185D77E70087F48C /* SDWebImageDownloaderDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageDownloaderDelegate.h; sourceTree = "<group>"; };
+		8EEE8C86185D77E70087F48C /* SDWebImageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManager.h; sourceTree = "<group>"; };
+		8EEE8C87185D77E70087F48C /* SDWebImageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDWebImageManager.m; sourceTree = "<group>"; };
+		8EEE8C88185D77E70087F48C /* SDWebImageManagerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDWebImageManagerDelegate.h; sourceTree = "<group>"; };
+		8EEE8C89185D77E70087F48C /* UIImageView+WebCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+WebCache.h"; sourceTree = "<group>"; };
+		8EEE8C8A185D77E70087F48C /* UIImageView+WebCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+WebCache.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,9 +120,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E7A79E4185CE4C200FABC39 /* photoFlow */ = {
+			isa = PBXGroup;
+			children = (
+				8EB74621185CA9F8008A8935 /* CollectionViewController.h */,
+				8EB74622185CA9F8008A8935 /* CollectionViewController.m */,
+				8EB7461E185CA9D3008A8935 /* CollectionCell.h */,
+				8EB7461F185CA9D3008A8935 /* CollectionCell.m */,
+			);
+			name = photoFlow;
+			path = ..;
+			sourceTree = "<group>";
+		};
 		8EB745DA185CA890008A8935 = {
 			isa = PBXGroup;
 			children = (
+				8EEE8C7C185D77E70087F48C /* SDWebCache */,
 				8EB74624185CAC91008A8935 /* image */,
 				8EB745EC185CA890008A8935 /* dailySnapApp */,
 				8EB7460B185CA890008A8935 /* dailySnapAppTests */,
@@ -123,17 +167,18 @@
 		8EB745EC185CA890008A8935 /* dailySnapApp */ = {
 			isa = PBXGroup;
 			children = (
-				8EB74621185CA9F8008A8935 /* CollectionViewController.h */,
-				8EB74622185CA9F8008A8935 /* CollectionViewController.m */,
+				8EB745F8185CA890008A8935 /* Main.storyboard */,
+				8E7A79E4185CE4C200FABC39 /* photoFlow */,
 				8EB745F5185CA890008A8935 /* AppDelegate.h */,
 				8EB745F6185CA890008A8935 /* AppDelegate.m */,
-				8EB745F8185CA890008A8935 /* Main.storyboard */,
-				8EB7461E185CA9D3008A8935 /* CollectionCell.h */,
-				8EB7461F185CA9D3008A8935 /* CollectionCell.m */,
 				8EB745FB185CA890008A8935 /* ViewController.h */,
 				8EB745FC185CA890008A8935 /* ViewController.m */,
 				8EB745FE185CA890008A8935 /* Images.xcassets */,
 				8EB745ED185CA890008A8935 /* Supporting Files */,
+				8E7A79EB185CE82B00FABC39 /* ViewLogin.h */,
+				8E7A79EC185CE82B00FABC39 /* ViewLogin.m */,
+				8EEE8C79185D756B0087F48C /* ModelServer.h */,
+				8EEE8C7A185D756B0087F48C /* ModelServer.m */,
 			);
 			path = dailySnapApp;
 			sourceTree = "<group>";
@@ -170,10 +215,34 @@
 		8EB74624185CAC91008A8935 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8E7A79E5185CE58B00FABC39 /* id.png */,
+				8E7A79E6185CE58B00FABC39 /* addSnap.png */,
+				8E7A79E7185CE58B00FABC39 /* password.png */,
 				8EB74625185CAC9A008A8935 /* 12.png */,
 				8EB74627185CACA7008A8935 /* 23.png */,
 			);
 			name = image;
+			sourceTree = "<group>";
+		};
+		8EEE8C7C185D77E70087F48C /* SDWebCache */ = {
+			isa = PBXGroup;
+			children = (
+				8EEE8C7D185D77E70087F48C /* SDImageCache.h */,
+				8EEE8C7E185D77E70087F48C /* SDImageCache.m */,
+				8EEE8C7F185D77E70087F48C /* SDImageCacheDelegate.h */,
+				8EEE8C80185D77E70087F48C /* SDWebImageCompat.h */,
+				8EEE8C81185D77E70087F48C /* SDWebImageDecoder.h */,
+				8EEE8C82185D77E70087F48C /* SDWebImageDecoder.m */,
+				8EEE8C83185D77E70087F48C /* SDWebImageDownloader.h */,
+				8EEE8C84185D77E70087F48C /* SDWebImageDownloader.m */,
+				8EEE8C85185D77E70087F48C /* SDWebImageDownloaderDelegate.h */,
+				8EEE8C86185D77E70087F48C /* SDWebImageManager.h */,
+				8EEE8C87185D77E70087F48C /* SDWebImageManager.m */,
+				8EEE8C88185D77E70087F48C /* SDWebImageManagerDelegate.h */,
+				8EEE8C89185D77E70087F48C /* UIImageView+WebCache.h */,
+				8EEE8C8A185D77E70087F48C /* UIImageView+WebCache.m */,
+			);
+			path = SDWebCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -252,10 +321,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7A79E8185CE58B00FABC39 /* id.png in Resources */,
 				8EB74628185CACA7008A8935 /* 23.png in Resources */,
+				8E7A79EA185CE58B00FABC39 /* password.png in Resources */,
 				8EB74626185CAC9A008A8935 /* 12.png in Resources */,
 				8EB745FF185CA890008A8935 /* Images.xcassets in Resources */,
 				8EB745F1185CA890008A8935 /* InfoPlist.strings in Resources */,
+				8E7A79E9185CE58B00FABC39 /* addSnap.png in Resources */,
 				8EB745FA185CA890008A8935 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -275,11 +347,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E7A79ED185CE82B00FABC39 /* ViewLogin.m in Sources */,
+				8EEE8C8E185D77E70087F48C /* SDWebImageManager.m in Sources */,
+				8EEE8C8F185D77E70087F48C /* UIImageView+WebCache.m in Sources */,
 				8EB74620185CA9D3008A8935 /* CollectionCell.m in Sources */,
 				8EB745FD185CA890008A8935 /* ViewController.m in Sources */,
 				8EB745F7185CA890008A8935 /* AppDelegate.m in Sources */,
+				8EEE8C8D185D77E70087F48C /* SDWebImageDownloader.m in Sources */,
+				8EEE8C7B185D756B0087F48C /* ModelServer.m in Sources */,
 				8EB74623185CA9F8008A8935 /* CollectionViewController.m in Sources */,
 				8EB745F3185CA890008A8935 /* main.m in Sources */,
+				8EEE8C8C185D77E70087F48C /* SDWebImageDecoder.m in Sources */,
+				8EEE8C8B185D77E70087F48C /* SDImageCache.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -488,6 +567,7 @@
 				8EB74617185CA890008A8935 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8EB74618185CA890008A8935 /* Build configuration list for PBXNativeTarget "dailySnapAppTests" */ = {
 			isa = XCConfigurationList;
@@ -496,6 +576,7 @@
 				8EB7461A185CA890008A8935 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
