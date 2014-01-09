@@ -29,7 +29,8 @@
     
 
     _responseData = [[NSMutableData alloc]initWithCapacity:10];
-    NSString *aURLString = @"http://1.234.2.8/board.php";
+    NSString *aURLString = @"http://0.0.0.0:7000/snap/json";
+
     NSURL *aURL = [NSURL URLWithString:aURLString];
     NSURLRequest *aRequest = [NSMutableURLRequest
                               requestWithURL:aURL];
@@ -38,6 +39,18 @@
     }
     return self;
 }
+//
+//-(void)reload
+//{
+//    _responseData = [[NSMutableData alloc]initWithCapacity:10];
+//    NSString *aURLString = @"http://0.0.0.0:7000/json";
+//    
+//    NSURL *aURL = [NSURL URLWithString:aURLString];
+//    NSURLRequest *aRequest = [NSMutableURLRequest
+//                              requestWithURL:aURL];
+//    NSURLConnection *connection = [[NSURLConnection alloc]
+//                                   initWithRequest:aRequest delegate:self startImmediately:YES];
+//}
 
 
 -(NSDictionary*)objectAtiIndex:(NSInteger)index
@@ -57,11 +70,48 @@
 
 -(void)connectionDidFinishLoading:(NSURLConnection*)connection
 {
-    NSArray * resultArray = [NSJSONSerialization JSONObjectWithData:_responseData options:NSJSONReadingMutableContainers error:nil];
-    NSLog(@"%@",resultArray);
-    _itemArray = resultArray;
+    
+    NSDictionary * resultArray = [NSJSONSerialization JSONObjectWithData:_responseData options:NSJSONReadingMutableContainers error:nil];
+    _itemArray = [resultArray objectForKey:@"result"];
+    
     [_collectionController.collectionView reloadData];
 }
 
+
+-(BOOL) newPost:(NSString*)title withMini:(NSString*)text withImage:(NSData*)image
+{
+    NSDateFormatter *now = [[NSDateFormatter alloc] init];
+    [now setDateFormat:@"yyyy-MM-dd-HH-mm-ss"];
+    NSString* date = [now stringFromDate:[NSDate date]];
+    
+    NSString *aURLString = @"http://0.0.0.0:7000/snap/uploadM";
+    NSURL *aURL = [NSURL URLWithString:aURLString];
+    NSMutableURLRequest *aRequest = [NSMutableURLRequest requestWithURL:aURL];
+    [aRequest setHTTPMethod:@"POST"];
+    
+    NSString *boundary = @"---------------------------14737809831466499882746641449";
+    NSString *contentType = [NSString stringWithFormat:@"multipart/form-data; boundary=%@",boundary];
+    [aRequest addValue:contentType forHTTPHeaderField: @"Content-Type"];
+    
+    NSMutableData *body = [NSMutableData data];
+    [body appendData:[[NSString stringWithFormat:@"--%@\r\n", boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", @"title"] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"%@\r\n", title] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"%@\"\r\n\r\n", @"mini"] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"%@\r\n", text] dataUsingEncoding:NSUTF8StringEncoding]];
+    
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[[NSString stringWithFormat:@"Content-Disposition: form-data; name=\"snap\"; filename=\"%@.jpg\"\r\n",@"HI"] dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData:[@"Content-Type: image/jpg\r\n\r\n" dataUsingEncoding:NSUTF8StringEncoding]];
+    [body appendData: [NSData dataWithData:image]];
+    [body appendData:[[NSString stringWithFormat:@"\r\n--%@--\r\n",boundary] dataUsingEncoding:NSUTF8StringEncoding]];
+    [aRequest setHTTPBody:body];
+    
+    NSURLConnection *connection = [[NSURLConnection alloc]
+                                   initWithRequest:aRequest delegate:self startImmediately:YES];
+    return NO;
+}
 
 @end

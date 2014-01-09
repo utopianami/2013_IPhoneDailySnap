@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
-@interface CollectionViewController : UICollectionViewController
+@interface CollectionViewController : UICollectionViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIAlertViewDelegate, UIActionSheetDelegate>
+- (IBAction)camera:(id)sender;
 
 @end

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E1390D2187C02360016050D /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E1390D1187C02360016050D /* button.png */; };
+		8E1390D5187C24D20016050D /* wirteViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1390D4187C24D20016050D /* wirteViewViewController.m */; };
+		8E25BF6A187C3F55007498DA /* detailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E25BF69187C3F55007498DA /* detailViewController.m */; };
 		8E7A79E8185CE58B00FABC39 /* id.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A79E5185CE58B00FABC39 /* id.png */; };
 		8E7A79E9185CE58B00FABC39 /* addSnap.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A79E6185CE58B00FABC39 /* addSnap.png */; };
 		8E7A79EA185CE58B00FABC39 /* password.png in Resources */ = {isa = PBXBuildFile; fileRef = 8E7A79E7185CE58B00FABC39 /* password.png */; };
@@ -48,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E1390D1187C02360016050D /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		8E1390D3187C24D20016050D /* wirteViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = wirteViewViewController.h; path = ../wirteViewViewController.h; sourceTree = "<group>"; };
+		8E1390D4187C24D20016050D /* wirteViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = wirteViewViewController.m; path = ../wirteViewViewController.m; sourceTree = "<group>"; };
+		8E25BF68187C3F55007498DA /* detailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = detailViewController.h; path = ../detailViewController.h; sourceTree = "<group>"; };
+		8E25BF69187C3F55007498DA /* detailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = detailViewController.m; path = ../detailViewController.m; sourceTree = "<group>"; };
 		8E7A79E5185CE58B00FABC39 /* id.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = id.png; sourceTree = "<group>"; };
 		8E7A79E6185CE58B00FABC39 /* addSnap.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = addSnap.png; sourceTree = "<group>"; };
 		8E7A79E7185CE58B00FABC39 /* password.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = password.png; sourceTree = "<group>"; };
@@ -167,6 +175,10 @@
 		8EB745EC185CA890008A8935 /* dailySnapApp */ = {
 			isa = PBXGroup;
 			children = (
+				8E25BF68187C3F55007498DA /* detailViewController.h */,
+				8E25BF69187C3F55007498DA /* detailViewController.m */,
+				8E1390D3187C24D20016050D /* wirteViewViewController.h */,
+				8E1390D4187C24D20016050D /* wirteViewViewController.m */,
 				8EB745F8185CA890008A8935 /* Main.storyboard */,
 				8E7A79E4185CE4C200FABC39 /* photoFlow */,
 				8EB745F5185CA890008A8935 /* AppDelegate.h */,
@@ -215,6 +227,7 @@
 		8EB74624185CAC91008A8935 /* image */ = {
 			isa = PBXGroup;
 			children = (
+				8E1390D1187C02360016050D /* button.png */,
 				8E7A79E5185CE58B00FABC39 /* id.png */,
 				8E7A79E6185CE58B00FABC39 /* addSnap.png */,
 				8E7A79E7185CE58B00FABC39 /* password.png */,
@@ -328,6 +341,7 @@
 				8EB745FF185CA890008A8935 /* Images.xcassets in Resources */,
 				8EB745F1185CA890008A8935 /* InfoPlist.strings in Resources */,
 				8E7A79E9185CE58B00FABC39 /* addSnap.png in Resources */,
+				8E1390D2187C02360016050D /* button.png in Resources */,
 				8EB745FA185CA890008A8935 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,7 +364,9 @@
 				8E7A79ED185CE82B00FABC39 /* ViewLogin.m in Sources */,
 				8EEE8C8E185D77E70087F48C /* SDWebImageManager.m in Sources */,
 				8EEE8C8F185D77E70087F48C /* UIImageView+WebCache.m in Sources */,
+				8E25BF6A187C3F55007498DA /* detailViewController.m in Sources */,
 				8EB74620185CA9D3008A8935 /* CollectionCell.m in Sources */,
+				8E1390D5187C24D20016050D /* wirteViewViewController.m in Sources */,
 				8EB745FD185CA890008A8935 /* ViewController.m in Sources */,
 				8EB745F7185CA890008A8935 /* AppDelegate.m in Sources */,
 				8EEE8C8D185D77E70087F48C /* SDWebImageDownloader.m in Sources */,

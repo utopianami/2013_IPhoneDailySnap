@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewLogin : UICollectionViewController
+@interface ViewLogin : UIViewController
 
 @end

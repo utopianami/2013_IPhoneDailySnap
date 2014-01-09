@@ -15,5 +15,7 @@
 -(NSDictionary*)objectAtiIndex:(NSInteger)index;
 -(void)addItem:(NSDictionary*)item;
 -(NSInteger)numberOfData;
+-(BOOL) newPost:(NSString*)title withMini:(NSString*)text withImage:(NSData*)image;
+-(void)reload;
 
 @end
